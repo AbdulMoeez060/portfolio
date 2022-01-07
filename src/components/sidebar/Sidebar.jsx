@@ -6,7 +6,7 @@ function Sidebar() {
             <nav className="navbar">
                 <ul className="navbar-nav">
                     <li className="logo">
-                        <a href="" className="nav-link">
+                        <a href="#intro" className="nav-link">
 
                             <span className="link-text">Portfolio</span>
                             <svg
@@ -48,7 +48,7 @@ function Sidebar() {
                         </a>
                     </li> */}
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#intro" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -77,7 +77,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#intro" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -106,7 +106,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#intro" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -135,7 +135,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">
+                        <a href="#intro" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
