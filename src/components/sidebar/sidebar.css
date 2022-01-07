@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb{
     position: fixed;
     background-color: var(--bg-primary);
     transition: width 200ms ease;
-    position: absolute;
+    
     z-index: 100;
 }
 
@@ -41,6 +41,7 @@ body::-webkit-scrollbar-thumb{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 .nav-item{
     width: 100%;
