@@ -3,7 +3,7 @@ import sample from '../../image/man.png'
 
 function Intro() {
     return (
-        <div className="intro">
+        <div className="intro" id="home">
             <div className="i-left">
                 <div className="i-left-wrapper">
                     <h2 className="i-intro">Hello, My Name is</h2>
