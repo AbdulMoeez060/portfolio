@@ -106,7 +106,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#intro" class="nav-link">
+                        <a href="#projects" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -130,7 +130,7 @@ function Sidebar() {
                                     ></path>
                                 </g>
                             </svg>
-                            <span class="link-text">Space</span>
+                            <span class="link-text">Projects</span>
                         </a>
                     </li>
 

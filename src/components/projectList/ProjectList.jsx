@@ -4,7 +4,7 @@ import {projects} from '../../data'
 
 function ProjectList() {
     return (
-        <div className='projectList'>
+        <div className='projectList' id='projects'>
 
             <div className="pl-texts">
                 <h1 className="pl-title">To Create and Learn.</h1>
