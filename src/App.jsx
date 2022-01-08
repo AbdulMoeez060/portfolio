@@ -1,5 +1,6 @@
 import About from "./components/about/About";
 import Intro from "./components/intro/Intro";
+import ProjectList from "./components/projectList/ProjectList";
 import Sidebar from "./components/sidebar/Sidebar";
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
         <Sidebar/>
         <Intro/>
         <About/>
+        <ProjectList/>
       </div>;
   };
   
