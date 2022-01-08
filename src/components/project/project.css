@@ -12,6 +12,8 @@
     display: flex;
     background-color: rgb(243,242,242);
     align-items: center;
+    position: sticky;
+    z-index: 2;
 }
 .project-circle{
     width: 6px;
@@ -22,5 +24,8 @@
 }
 .project-img{
     width: 100%;
-    
+    transition: all 10s ease;
+}
+.project:hover .project-img{
+    transform: translateY(-100%);
 }
