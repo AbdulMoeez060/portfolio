@@ -2,15 +2,24 @@ import './contact.css'
 import phone from '../../image/phone.png'
 import email from '../../image/email.png'
 import address from '../../image/address.png'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser';
 
 
 function Contact() {
-    const formRef= useRef();
-    
-    const handleSubmit = (e) =>{
+    const formRef = useRef();
+    const [done,setDone] = useState(false);
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-    }
+        emailjs.sendForm('service_qutlajs', 'template_sprgo23', formRef.current, 'user_YwxcZU5KaI2igjXUbZMAS')
+            .then((result) => {
+                console.log(result.text);
+                setDone(true);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div className='contact' id='contact'>
@@ -38,7 +47,7 @@ function Contact() {
                 </div>
                 <div className="contact-right">
                     <p className="contact-desc">
-                        <b>What's your story?</b> Get in touch for collabrations. Always available for freelance projects if right one comes along. 
+                        <b>What's your story?</b> Get in touch for collabrations. Always available for freelance projects if right one comes along.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" name="uname" placeholder='Name' />
@@ -46,7 +55,7 @@ function Contact() {
                         <input type="text" name="uemail" placeholder='Email' />
                         <textarea name="umessage" placeholder='Message' rows="5"></textarea>
                         <button >Submit</button>
-
+                        {done && 'Thank you for contacting.'}
                     </form>
                 </div>
             </div>
