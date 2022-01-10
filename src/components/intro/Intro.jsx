@@ -1,5 +1,5 @@
 import "./intro.css"
-import sample from '../../image/man.png'
+import sample from '../../image/me.png'
 
 function Intro() {
     return (
