@@ -135,7 +135,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#intro" class="nav-link">
+                        <a href="#contact" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -159,7 +159,7 @@ function Sidebar() {
                                     ></path>
                                 </g>
                             </svg>
-                            <span class="link-text">Shuttle</span>
+                            <span class="link-text">Contact Us</span>
                         </a>
                     </li>
                 </ul>

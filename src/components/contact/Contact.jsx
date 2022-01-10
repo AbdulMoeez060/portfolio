@@ -6,7 +6,7 @@ import address from '../../image/address.png'
 
 function Contact() {
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
 
             <div className="contact-bg"> </div>
             <div className="contact-wrapper">
@@ -29,7 +29,19 @@ function Contact() {
                         </div>
                     </div>
                 </div>
-                <div className="contact-right"></div>
+                <div className="contact-right">
+                    <p className="contact-desc">
+                        <b>What's your story?</b> Get in touch for collabrations. Always available for freelance projects if right one comes along. 
+                    </p>
+                    <form action="">
+                        <input type="text" name="uname" placeholder='Name' />
+                        <input type="text" name="usubject" placeholder='Subject' />
+                        <input type="text" name="uemail" placeholder='Email' />
+                        <textarea name="umessage" placeholder='Message' rows="5"></textarea>
+                        <button >Submit</button>
+
+                    </form>
+                </div>
             </div>
         </div>
     )
