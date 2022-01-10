@@ -14,10 +14,10 @@ function Contact() {
         e.preventDefault();
         emailjs.sendForm('service_qutlajs', 'template_sprgo23', formRef.current, 'user_YwxcZU5KaI2igjXUbZMAS')
             .then((result) => {
-                console.log(result.text);
+                //console.log(result.text);
                 setDone(true);
             }, (error) => {
-                console.log(error.text);
+                //console.log(error.text);
             });
     };
 
