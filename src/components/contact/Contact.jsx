@@ -2,9 +2,16 @@ import './contact.css'
 import phone from '../../image/phone.png'
 import email from '../../image/email.png'
 import address from '../../image/address.png'
+import { useRef } from 'react'
 
 
 function Contact() {
+    const formRef= useRef();
+    
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+    }
+
     return (
         <div className='contact' id='contact'>
 
@@ -33,7 +40,7 @@ function Contact() {
                     <p className="contact-desc">
                         <b>What's your story?</b> Get in touch for collabrations. Always available for freelance projects if right one comes along. 
                     </p>
-                    <form action="">
+                    <form ref={formRef} onSubmit={handleSubmit}>
                         <input type="text" name="uname" placeholder='Name' />
                         <input type="text" name="usubject" placeholder='Subject' />
                         <input type="text" name="uemail" placeholder='Email' />
