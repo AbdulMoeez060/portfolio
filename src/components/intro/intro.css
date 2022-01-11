@@ -97,6 +97,8 @@
 @media screen and (max-width:480px){
    .intro{
        flex-direction: column;
+       margin-left: 0px;
+
    } 
    .i-left-wrapper{
        padding: 10px;

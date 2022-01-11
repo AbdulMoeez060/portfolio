@@ -1,0 +1,17 @@
+.skills{
+    height: 80vh;
+    margin-left: 5rem;
+    
+}
+.skills-title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+@media screen and (max-width:480px){
+    .skills{
+        margin: 0px;
+        margin-top: 40px;
+        
+    }
+}

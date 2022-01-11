@@ -71,6 +71,7 @@
     .about{
         flex-direction: column;
         text-align: center;
+        margin-left: 0px;
         margin-top: 50px;
     } 
     .about-left{

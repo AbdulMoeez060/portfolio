@@ -4,6 +4,7 @@ import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProjectList from "./components/projectList/ProjectList";
 import Sidebar from "./components/sidebar/Sidebar";
+import Skillbars from "./components/skillbar/Skillbars";
 import Toggle from "./components/toggle/Toggle";
 import { ThemeContext } from "./context";
 
@@ -19,6 +20,7 @@ const App = () => {
         <Sidebar/>
         <Intro/>
         <About/>
+        <Skillbars/>
         <ProjectList/>
         <Contact/>
       </div >

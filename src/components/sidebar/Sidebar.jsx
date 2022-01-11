@@ -7,7 +7,7 @@ function Sidebar() {
     const darkMode = theme.state.darkMode;
 
     return (
-        <div className={darkMode? 'dark':'light'}>
+        <div className={darkMode ? 'dark' : 'light'}>
             <nav className="navbar">
                 <ul className="navbar-nav">
                     <li className="logo">
@@ -39,7 +39,7 @@ function Sidebar() {
                             </svg>
                         </a>
                     </li>
-                    
+
                     {/* <li class="nav-item">
                         <a href="#" class="nav-link">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house-user" class="svg-inline--fa fa-house-user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.6 483.2 483.9 512 448.5 512H128.1C92.75 512 64.09 483.3 64.09 448V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5H575.8zM288 160C252.7 160 224 188.7 224 224C224 259.3 252.7 288 288 288C323.3 288 352 259.3 352 224C352 188.7 323.3 160 288 160zM256 320C211.8 320 176 355.8 176 400C176 408.8 183.2 416 192 416H384C392.8 416 400 408.8 400 400C400 355.8 364.2 320 320 320H256z"></path></svg>
@@ -111,7 +111,7 @@ function Sidebar() {
                     </li>
 
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link">
+                        <a href="#skills" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -135,12 +135,12 @@ function Sidebar() {
                                     ></path>
                                 </g>
                             </svg>
-                            <span class="link-text">Projects</span>
+                            <span class="link-text">Skills</span>
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#contact" class="nav-link">
+                        <a href="#projects" class="nav-link">
                             <svg
                                 aria-hidden="true"
                                 focusable="false"
@@ -160,6 +160,36 @@ function Sidebar() {
                                     <path
                                         fill="currentColor"
                                         d="M592.6 208.24C559.73 192.84 515.78 184 472 184H186.54a45.62 45.62 0 0 0-40.2-24H32c-23.2 0-32 10-32 24v144c0 14 8.82 24 32 24h114.34a45.62 45.62 0 0 0 40.2-24H472c43.78 0 87.73-8.84 120.6-24.24C622.28 289.84 640 272 640 256s-17.72-33.84-47.4-47.76zM488 296a8 8 0 0 1-8-8v-64a8 8 0 0 1 8-8c31.91 0 31.94 80 0 80z"
+                                        class="fa-primary"
+                                    ></path>
+                                </g>
+                            </svg>
+                            <span class="link-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <svg
+                                class="theme-icon"
+                                id="darkIcon"
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fad"
+                                data-icon="sunglasses"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="svg-inline--fa fa-sunglasses fa-w-18 fa-7x"
+                            >
+                                <g class="fa-group">
+                                    <path
+                                        fill="currentColor"
+                                        d="M574.09 280.38L528.75 98.66a87.94 87.94 0 0 0-113.19-62.14l-15.25 5.08a16 16 0 0 0-10.12 20.25L395.25 77a16 16 0 0 0 20.22 10.13l13.19-4.39c10.87-3.63 23-3.57 33.15 1.73a39.59 39.59 0 0 1 20.38 25.81l38.47 153.83a276.7 276.7 0 0 0-81.22-12.47c-34.75 0-74 7-114.85 26.75h-73.18c-40.85-19.75-80.07-26.75-114.85-26.75a276.75 276.75 0 0 0-81.22 12.45l38.47-153.8a39.61 39.61 0 0 1 20.38-25.82c10.15-5.29 22.28-5.34 33.15-1.73l13.16 4.39A16 16 0 0 0 180.75 77l5.06-15.19a16 16 0 0 0-10.12-20.21l-15.25-5.08A87.95 87.95 0 0 0 47.25 98.65L1.91 280.38A75.35 75.35 0 0 0 0 295.86v70.25C0 429 51.59 480 115.19 480h37.12c60.28 0 110.38-45.94 114.88-105.37l2.93-38.63h35.76l2.93 38.63c4.5 59.43 54.6 105.37 114.88 105.37h37.12C524.41 480 576 429 576 366.13v-70.25a62.67 62.67 0 0 0-1.91-15.5zM203.38 369.8c-2 25.9-24.41 46.2-51.07 46.2h-37.12C87 416 64 393.63 64 366.11v-37.55a217.35 217.35 0 0 1 72.59-12.9 196.51 196.51 0 0 1 69.91 12.9zM512 366.13c0 27.5-23 49.87-51.19 49.87h-37.12c-26.69 0-49.1-20.3-51.07-46.2l-3.12-41.24a196.55 196.55 0 0 1 69.94-12.9A217.41 217.41 0 0 1 512 328.58z"
+                                        class="fa-secondary"
+                                    ></path>
+                                    <path
+                                        fill="currentColor"
+                                        d="M64.19 367.9c0-.61-.19-1.18-.19-1.8 0 27.53 23 49.9 51.19 49.9h37.12c26.66 0 49.1-20.3 51.07-46.2l3.12-41.24c-14-5.29-28.31-8.38-42.78-10.42zm404-50l-95.83 47.91.3 4c2 25.9 24.38 46.2 51.07 46.2h37.12C489 416 512 393.63 512 366.13v-37.55a227.76 227.76 0 0 0-43.85-10.66z"
                                         class="fa-primary"
                                     ></path>
                                 </g>
