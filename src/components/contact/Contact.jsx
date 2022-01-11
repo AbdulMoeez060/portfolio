@@ -2,13 +2,17 @@ import './contact.css'
 import phone from '../../image/phone.png'
 import email from '../../image/email.png'
 import address from '../../image/address.png'
-import { useRef, useState } from 'react'
+import { useContext, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
+import { ThemeContext } from '../../context'
 
 
 function Contact() {
     const formRef = useRef();
     const [done,setDone] = useState(false);
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -50,10 +54,10 @@ function Contact() {
                         <b>What's your story?</b> Get in touch for collabrations. Always available for freelance projects if right one comes along.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input type="text" name="uname" placeholder='Name' />
-                        <input type="text" name="usubject" placeholder='Subject' />
-                        <input type="text" name="uemail" placeholder='Email' />
-                        <textarea name="umessage" placeholder='Message' rows="5"></textarea>
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" name="uname" placeholder='Name' />
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" name="usubject" placeholder='Subject' />
+                        <input style={{backgroundColor: darkMode && "#333"}} type="text" name="uemail" placeholder='Email' />
+                        <textarea style={{backgroundColor: darkMode && "#333"}} name="umessage" placeholder='Message' rows="5"></textarea>
                         <button >Submit</button>
                         {done && 'Thank you for contacting.'}
                     </form>

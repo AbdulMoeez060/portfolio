@@ -1,19 +1,28 @@
+import { useContext } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Intro from "./components/intro/Intro";
 import ProjectList from "./components/projectList/ProjectList";
 import Sidebar from "./components/sidebar/Sidebar";
 import Toggle from "./components/toggle/Toggle";
+import { ThemeContext } from "./context";
 
 const App = () => {
-    return <div>
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
+
+    return (
+        <div style={{ backgroundColor: darkMode? "#222":"white" , color: darkMode && "white"}}>
         <Toggle/>
         <Sidebar/>
         <Intro/>
         <About/>
         <ProjectList/>
         <Contact/>
-      </div>;
+      </div >
+    );
   };
-  
-  export default App;
+
+export default App;
