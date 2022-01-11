@@ -1,8 +1,13 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../context';
 import './sidebar.css'
 
 function Sidebar() {
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
-        <div>
+        <div className={darkMode? 'dark':'light'}>
             <nav className="navbar">
                 <ul className="navbar-nav">
                     <li className="logo">
